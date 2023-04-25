@@ -1,0 +1,23 @@
+<div class="card">
+    <div class="question">
+        <p class="question">{%ID%}<span>) </span>{%QUESTION%}</p>
+    </div>
+    <div class="inputs">
+        <input type="radio" name="RADIO" onclick="validate('{%OPTION1%}','{%ANS%}','{%ID%}')">
+        <label for="">{%OPTION1%}</label><br>
+        <input type="radio" name="RADIO" onclick="validate('{%OPTION2%}','{%ANS%}','{%ID%}')">
+        <label for="">{%OPTION2%}</label><br>
+        <input type="radio" name="RADIO" onclick="validate('{%OPTION3%}','{%ANS%}','{%ID%}')">
+        <label for="">{%OPTION3%}</label><br>
+        <input type="radio" name="RADIO" onclick="validate('{%OPTION4%}','{%ANS%}','{%ID%}')">
+        <label for="">{%OPTION4%}</label><br>
+    </div> 
+    <div class="wrongText">
+        <p id=w{%ID%} style="display: none;">wrong!!!</p>
+    </div>
+    <div>
+        <br><br><button class="answerB" onclick="ans('{%ID%}')">answer</button>
+        <p id={%ID%} style="display: none;">the answer is: {%ANS%}</p>
+    </div>
+    <br><br>
+</div> 
